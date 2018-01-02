@@ -1,0 +1,41 @@
+<story path="file:/C:/Users/TR-LT-41/git/assessment/berlin-clock/bin/stories/berlin-clock.story" title="Story: The Berlin Clock">
+<meta>
+<property keyword="@" name="scope" value="interview"/>
+</meta>
+<scenario keyword="Scenario:" title="Midnight">
+<step outcome="successful">When the time is <parameter>00:00:00</parameter></step>
+<step outcome="successful">Then the clock should look like
+Y
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO</step>
+</scenario>
+<scenario keyword="Scenario:" title="Middle of the afternoon">
+<step outcome="successful">When the time is <parameter>13:17:01</parameter></step>
+<step outcome="successful">Then the clock should look like
+O
+RROO
+RRRO
+YYROOOOOOOO
+YYOO</step>
+</scenario>
+<scenario keyword="Scenario:" title="Just before midnight">
+<step outcome="successful">When the time is <parameter>23:59:59</parameter></step>
+<step outcome="successful">Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYRYY
+YYYY</step>
+</scenario>
+<scenario keyword="Scenario:" title="Midnight">
+<step outcome="successful">When the time is <parameter>24:00:00</parameter></step>
+<step outcome="successful">Then the clock should look like
+Y
+RRRR
+RRRR
+OOOOOOOOOOO
+OOOO</step>
+</scenario>
+</story>
